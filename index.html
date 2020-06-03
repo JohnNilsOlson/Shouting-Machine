@@ -6,11 +6,35 @@
   <title>Shouting Machine</title>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
+  
   <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
+  
 </head>
 <body>
-  
+  <div class = "container">
+  <h1> Welcome to the Shouting Machine</h1>
+    <form id="shoutMessageForm">
+        <div class = "form-group">
+          <label for = "messageToShout">Type in a message you want to shout.</label>
+          <input id = "messageToShout" class = "form-control" type = "text">
+        </div>
+
+        <button type = "submit" class = "btn">Shout My Message!</button>
+
+    </form>
+  </div>
+  <div class = "container">
+    <div class = "row">
+    <div class = "col-md-4" >
+      <img src = "megaphone.jpg.png" alt = "picture of a megaphone">
+    </div> 
+    <div id = "returnedMessage" class = "col-md-8">
+     <h3> Here is your shouted message:</h3>
+      <h1><span class = "messageDisplayed"></span> </h1>
+   </div>  
+   </div>
+  </div>
   
 </body>
 </html>
